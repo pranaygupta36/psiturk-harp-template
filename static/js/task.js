@@ -41,111 +41,187 @@ var instructionPages = [ // add as a list as many pages as you like
 *
 ********************/
 
-/********************
-* STROOP TEST       *
-********************/
 var StroopExperiment = function() {
 
-	var wordon, // time word is presented
-	    listening = false;
+	var annotations =[]; //to collect the (moveTime, myTableConfValue) events for each stimulus
 
-	// Stimuli for a basic Stroop experiment
-	var stims = [
-			["SHIP", "red", "unrelated"],
-			["MONKEY", "green", "unrelated"],
-			["ZAMBONI", "blue", "unrelated"],
-			["RED", "red", "congruent"],
-			["GREEN", "green", "congruent"],
-			["BLUE", "blue", "congruent"],
-			["GREEN", "red", "incongruent"],
-			["BLUE", "green", "incongruent"],
-			["RED", "blue", "incongruent"]
+	// Set the Stimuli
+	var stims; 
+    console.log("in task.js THE CONDITION IS " + mycondition);
+    
+    //Set which stimuli they see based on their condition
+    // if (mycondition == '0'){ //Condition 0 = Perspective A = Back to door = Closer to Robot
+        console.log("Condition 0!");
+        stims = [
+            //[Stimulus nickname, trial type, stimulus video name (form: pathingMethod_goalTable_Pperspective), pathing method (Omn, SA, SB,or M), goal table (0 = Before Table, 1 = Pespective Table, 2 = Across, 3 = Perpendicular), viewpoint (A or B)]
+			// ["Goal: 0, PathMethod: L_who", "show_video", "A_0_PA.mp4", "L_who", "GOAL", "Perspective"]
+
+            ["Goal: 0, PathMethod: LA, View A", "show_video", "video_1.mp4", "2.png", "LA",   "G_ME", "VA"],
+            ["Goal: 0, PathMethod: LA, View A", "show_video", "video_2.mp4", "2.png", "LA",   "G_ME", "VA"],
 		];
+
+	// var wordon, // time word is presented
+	//     listening = false;
+
+	// // Stimuli for a basic Stroop experiment
+	// var stims = [
+	// 		["SHIP", "red", "unrelated"],
+	// 		["MONKEY", "green", "unrelated"],
+	// 		["ZAMBONI", "blue", "unrelated"],
+	// 		["RED", "red", "congruent"],
+	// 		["GREEN", "green", "congruent"],
+	// 		["BLUE", "blue", "congruent"],
+	// 		["GREEN", "red", "incongruent"],
+	// 		["BLUE", "green", "incongruent"],
+	// 		["RED", "blue", "incongruent"]
+	// 	];
 
 	stims = _.shuffle(stims);
 
 	var next = function() {
+		console.log(stims.length)
 		if (stims.length===0) {
 			finish();
 		}
 		else {
-			stim = stims.shift();
-			show_word( stim[0], stim[1] );
-			wordon = new Date().getTime();
-			listening = true;
-			d3.select("#query").html('<p id="prompt">Type "R" for Red, "B" for blue, "G" for green.</p>');
+			var stim = stims.shift();
+			var stimStartTime, 
+	            stimPauseTime,
+                stimPlayTime;
+            
+            // if(stim[1] == "show_video"){
+			document.getElementById("container-exp").style.display = "block";
+			document.getElementById("container-instructions").style.display = "none";
+			document.getElementById("container-bot-check").style.display = "none";
+
+			show_stimulus(stim[2]);			
+			var video = document.getElementById("vid");
+			// video.play()
+			
+			video.onended = function(){
+				//DEBUG: 
+				console.log("The video has ended");
+				mark_image(stim[3])
+			}
+			var play_pause = document.getElementById("play-pause");
+			var replay = document.getElementById("replay");
+                			
+
+			play_pause.onmousedown = function(){
+				
+				if (typeof stimStartTime == 'undefined'){
+					stimStartTime = new Date().getTime(); 
+				}
+				else {
+					stimPlayTime = new Date().getTime(); //Time play begins again
+					var pauseTime = stimPlayTime - stimPauseTime; //calculate length of pause
+					stimStartTime = stimStartTime + pauseTime; //update start time to compensate for the pause
+				}
+				if (video.paused) {
+					video.play();
+					play_pause.innerHTML = "Pause"
+				}
+				else {
+					video.pause();
+					play_pause.innerHTML = "Play"
+				}
+			}
+
+			replay.onmousedown = function(){
+				// keep count of replay
+				video.pause();
+				video.currentTime = 0;
+				play_pause.innerHTML = "Play"
+			}
 		}
 	};
 	
-	var response_handler = function(e) {
-		if (!listening) return;
 
-		var keyCode = e.keyCode,
-			response;
 
-		switch (keyCode) {
-			case 82:
-				// "R"
-				response="red";
-				break;
-			case 71:
-				// "G"
-				response="green";
-				break;
-			case 66:
-				// "B"
-				response="blue";
-				break;
-			default:
-				response = "";
-				break;
-		}
-		if (response.length>0) {
-			listening = false;
-			var hit = response == stim[1];
-			var rt = new Date().getTime() - wordon;
+	var mark_image = function(imagePath) {
+		console.log("The video has ended, show image and get annotations")
+		document.getElementById("trial-heading").innerHTML = "Please draw boxes around the vehicles in the image."
+		document.getElementById("video-control-panel").style.display = "none";
+		document.getElementById("image-control-panel").style.display = "block";
+		
+		var video = document.getElementById("vid");
+		trial_duration = video.duration;
+		
+		// psiTurk.recordTrialData({'phase':"TRIAL",
+		// 						 'IV': stimulus[3],
+		// 						 'goaltable': stimulus[4],
+		// 						 'viewpoint': stimulus[5],
+		// 						 'events':sliderEvents,
+		// 						 'condition':mycondition,
+		// 						 'videoduraction':trial_duration
+		// 						}
+		// 					   );            
+	
+		d3.select("#sourceComp").remove();
+		d3.select("#vid").remove();
 
-			psiTurk.recordTrialData({'phase':"TEST",
-                                     'word':stim[0],
-                                     'color':stim[1],
-                                     'relation':stim[2],
-                                     'response':response,
-                                     'hit':hit,
-                                     'rt':rt}
-                                   );
-			remove_word();
+		d3.select("#media-container").append("img").attr("id", "image-to-annotate");
+		d3.select("#image-to-annotate").attr("src", "../static/stimuli_images/" + imagePath + "");
+
+		var anno = Annotorious.init({
+			image: document.getElementById('image-to-annotate'),
+			// disableEditor: true,
+			widgets : [],
+			allowEmpty : true
+		});
+		anno.setVisible(true);
+		var done_image = document.getElementById("done-image");
+		
+		done_image.onmousedown = function() {
+			console.log(anno.getAnnotations());
+			psiTurk.recordTrialData({'phase':"TRIAL",
+								 'annotations': anno.getAnnotations(),
+								});  
+			// const annotations = anno.getAnnotations();
+			// console.log(const_annotations)
+			document.getElementById("video-control-panel").style.display = "none";
+			document.getElementById("container-exp").style.display = "none";
+			document.getElementById("container-instructions").style.display = "block";
+			document.getElementById("container-bot-check").style.display = "none";
+		};
+		
+		document.getElementById("cont").addEventListener('click', continueClick);
+	
+		function continueClick(){
+			//DEBUG: console.log("continue button pressed");
+			psiTurk.saveData();
+			//Do not respond to more clicks
+			
+			document.getElementById("cont").removeEventListener('click', continueClick);
+			//go to next stimulus
+			d3.select("#image-to-annotate").remove();
 			next();
 		}
+
+	};
+
+	var show_stimulus = function(videoPath) {
+        // DEBUG: 
+		console.log("showing stim: " + videoPath);
+		document.getElementById("trial-heading").innerHTML = "Here is a video of a driving scenario."
+
+		document.getElementById("image-control-panel").style.display = "none";
+		document.getElementById("video-control-panel").style.display = "block";
+
+        d3.select("#media-container").append("video").attr("id", "vid").attr("width","1280").attr("height", "720").attr("controls", "controls");
+		d3.select("#vid").append("source").attr("id", "sourceComp").attr("src", "../static/stimuli_videos/" + videoPath + "");
 	};
 
 	var finish = function() {
-	    $("body").unbind("keydown", response_handler); // Unbind keys
 	    currentview = new Questionnaire();
 	};
-	
-	var show_word = function(text, color) {
-		d3.select("#stim")
-			.append("div")
-			.attr("id","word")
-			.style("color",color)
-			.style("text-align","center")
-			.style("font-size","150px")
-			.style("font-weight","400")
-			.style("margin","20px")
-			.text(text);
-	};
-
-	var remove_word = function() {
-		d3.select("#word").remove();
-	};
-
 	
 	// Load the stage.html snippet into the body of the page
 	psiTurk.showPage('stage.html');
 
 	// Register the response handler that is defined above to handle any
 	// key down events.
-	$("body").focus().keydown(response_handler); 
+	// $("body").focus().keydown(response_handler); 
 
 	// Start the test
 	next();

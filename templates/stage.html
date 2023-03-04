@@ -1,8 +1,67 @@
 <div id="container-exp">
 	<div id="trial">
-		<h1>Respond Quickly!</h1>
-		<p>What color is this word?</p>
-		<div id="stim"></div>
-		<div id="query"></div>
+		<h1 id="trial-heading">Here is a video of a driving scenario.</h1>
+		<div id="media-container">		
+		</div>
+		<div id="video-control-panel">
+				<div class="row">
+					<div class="col-sm-2">
+						<button type="button" class="btn btn-primary" id="play-pause">Play</button>
+					</div>
+					<div class="col-sm-2">
+						<button type="button" class="btn btn-primary" id="replay">Replay</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="image-control-panel">
+			<div class="row">
+				<div class="col-sm-2">
+					<button type="button" class="btn btn-primary" id="done-image">Done</button>
+				</div>
+			</div>
+		</div>
+	
 	</div>
 </div>
+	</div>
+</div>
+
+
+<div id="container-instructions" class="class1">
+    <h1>Please press continue to move to the next trial:</h1>
+    <div>
+        <button type="button" class="btn btn-primary" id="cont">Continue</button>
+    </div>
+</div>
+
+<style>
+.class1 {
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+</style>
+
+
+<div id="container-bot-check" class = "class1">
+	<div id="bot-question">
+		<h1>Thank you for your progress on our study! Keep it up! Please type in a letter (A-Z) and a digit (0-9) to continue.</h1>
+		<p>Example: B5
+        </p>
+        <p><input type="text" id="botcheck"> </p>
+        <br>
+        <div>
+        <button id="botcontinue">Continue</button>
+        </div>
+	</div>
+</div>
+
+<style>
+.class1 {
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+</style>
+
