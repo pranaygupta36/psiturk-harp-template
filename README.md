@@ -19,6 +19,10 @@ When prompted for a login while attempting to view user data, please use `harpla
 To use this template, please create your own repository based on this one, do not update this template unless there is a change you expect all future users to want (ex, updated HARP consent form or logo).
 
 Quickstart Notes:
+* Follow the [Quickstart](https://psiturk.readthedocs.io/en/latest/quickstart.html) within the psiturk documentation, to get started with psiturk. 
 * Logged data can be found at the host url + '/view_data', behind lab password protected login.
 * The folder "templates" contains the html pages of a study where the bulk of your work will take place
+* The `templates/exp.html` is the main form that controls the experiment.
+* `templates/task.js` is where you experiment code actually lives for most purposes this is where you want to focus debugging, development, etc...
+* Refer the Stroop Example within `templates/task.js` to get started.
 * If you would like to manually query user data, that can be found in `participants.db`
