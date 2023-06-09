@@ -1,18 +1,22 @@
 <div id="container-exp">
 	<div id="trial">
-		<h1 id="trial-heading">Here is a video of a driving scenario.</h1>
-		<div id="media-container">		
+		<h1 id="trial-heading">Please watch this video of a driving scenario.</h1>
+		<div id="video-container">		
 		</div>
 		<div id="video-control-panel">
-				<div class="row">
-					<div class="col-sm-2">
-						<button type="button" class="btn btn-primary" id="play-pause">Play</button>
-					</div>
-					<div class="col-sm-2">
-						<button type="button" class="btn btn-primary" id="replay">Replay</button>
-					</div>
+			<div class="row">
+				<div class="col-sm-2">
+					<button type="button" class="btn btn-primary" id="Done">Done</button>
 				</div>
 			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<h1 id="image-heading">Please mark the important vehicles and pedestrians in this image.</h1>
+		<div id="image-container">		
 		</div>
 		<div id="image-control-panel">
 			<div class="row">
@@ -35,6 +39,87 @@
     </div>
 </div>
 
+
+<div id="container-questionnaire">
+    <h1>Please answer some questions:</h1>
+
+    <hr />
+
+    <div class="instructions well">
+
+        <form id="postquiz" action="debrief" method="post">
+
+
+            <div class="row question">
+                <input class="form-check-input" type="checkbox" value="" id="dl">
+              <label class="form-check-label" for="defaultCheck1">
+                Do you posess a US driver's license?
+              </label>
+            </div>
+
+            <!-- beginning of a question -->
+            <div class="row question">
+                <div class="col-md-8">
+                    Please tell us how many years of driving experience do you have?
+                </div>
+                <div class="col-md-4">
+                    <select id="experience" name="experience">
+                        <option value="4">More than 15 Years</option>
+                        <option value="3">More than 10 Years</option>
+                        <option value="2">More than 5 Year</option>
+                        <option value="1">More than 1 Year</option>
+                        <option value="0">Less than 1 Year</option>
+                    </select>
+                </div>
+            </div>
+            <!-- end of a question -->
+
+
+            <!-- beginning of a question -->
+            <div class="row question">
+                <div class="col-md-8">
+                    On an average, how many hours per week do you spend driving?
+                </div>
+                <div class="col-md-4">
+                    <select id="habit" name="habit">
+                        <option value="4">More than 15 hours</option>
+                        <option value="3">More than 10 hours</option>
+                        <option value="2">More than 5 hours</option>
+                        <option value="1">More than 1 hour</option>
+                        <option value="0">Less than 1 hour</option>
+                    </select>
+                </div>
+            </div>
+	    <div>
+		<label for="prolific_id">Prolific ID: </label>
+  		<input type="text" id="prolific_id" name="Prolific-ID"><br><br>
+	    </div>
+        </form>
+    </div>
+
+    <hr />
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            </div>
+            <div class="col-xs-7">
+            </div>
+            <div class="col-xs-3">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                    Continue <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
 <style>
 .class1 {
   padding-top: 50px;
@@ -43,19 +128,6 @@
 }
 </style>
 
-
-<div id="container-bot-check" class = "class1">
-	<div id="bot-question">
-		<h1>Thank you for your progress on our study! Keep it up! Please type in a letter (A-Z) and a digit (0-9) to continue.</h1>
-		<p>Example: B5
-        </p>
-        <p><input type="text" id="botcheck"> </p>
-        <br>
-        <div>
-        <button id="botcontinue">Continue</button>
-        </div>
-	</div>
-</div>
 
 <style>
 .class1 {

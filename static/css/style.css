@@ -80,3 +80,21 @@ h1 {
   width:fit-content;
   height:fit-content;
 }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.column-vid {
+  float: left;
+  width: 50.00%;
+  padding: 5px;
+}
+
+svg.a9s-annotationlayer .a9s-selection .a9s-inner,
+svg.a9s-annotationlayer .a9s-annotation .a9s-inner  {
+  stroke-width:4;
+  stroke:magenta;
+}

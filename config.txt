@@ -20,7 +20,7 @@ table_name = turkdemo
 
 [Server Parameters]
 host = 0.0.0.0
-port = 22362
+port = 57514
 cutoff_time = 30
 logfile = server.log
 loglevel = 2
@@ -31,7 +31,7 @@ threads = auto
 secret_key = 'this is my secret key which is hard to guess, i should change this'
 #certfile = <path_to.crt> 
 #keyfile = <path_to.key>
-#adserver_revproxy_host = www.location.of.your.revproxy.sans.protocol.com
+#adserver_revproxy_host = www.vehicle-importance-study.harp.ri.cmu.edu
 #adserver_revproxy_port = 80 # defaults to 80
 #server_timeout = 30
 

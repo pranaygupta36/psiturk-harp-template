@@ -6,7 +6,7 @@
   describe what people can do if an error comes up, etc...
 
 -->
-<html>
+<!-- <html>
     <head>
         <meta charset="utf-8" />
         <title>HARP Lab Experiment - Informed Consent Form</title>
@@ -73,5 +73,221 @@
             </div>
         </div>
     </body>
-</html>
+</html> -->
 
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>HARP Lab Experiment - Informed Consent Form</title>
+        <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="static/css/style.css" type="text/css" />
+        <link rel="icon" href="static/favicon.ico" />
+        <script type="text/javascript">
+            function onexit() {
+              self.close(); // no harm, no foul here
+            }
+        </script>
+		<style>
+			@media print {
+				body * {
+					visibility: hidden;
+				}
+				.legal, .legal * {
+					visibility: visible;
+				}
+				.legal {
+					position: absolute;
+					left: 0;
+					top: 0;
+					overflow:visible;
+				} 
+			}
+		</style>
+    </head>
+    <body>
+        <div id="container-consent">
+            <div id="consent">
+                <h1>We need your consent to proceed
+                <div class="media-left pull-right" href="#">
+						<!-- REPLACE THE LOGO HERE WITH YOUR  UNIVERSITY, LAB, or COMPANY -->
+						<img id="consentlogo" src="../static/images/other.png" alt="Lab Logo" width = 200 height = 50/>
+			     </div>
+                </h1>
+                <hr />
+                <div class="legal well">
+                    <h3>Online Consent for Participation</h3>
+                    <p>
+                        This study is part of a research study conducted by Abhijat Biswas at Carnegie Mellon University.                    
+                    </p>
+                    <p>
+                        <b>
+                        Purpose
+                        </b>
+                        <br> 
+                        The purpose of the study is to evaluate and compare what vehicles and pedestrians do humans find important for safe driving in a driving scenario. 
+                    </p>
+                    <p>
+                        <b>
+                        Procedures    
+                        </b>
+                        <br>
+                        You will be asked to view videos of a driving scenario and mark the vehicles you think are important in an image. This study may take up to 20 minutes.
+                    </p>
+                    <p>
+                        <b>
+                        Participation Requirements    
+                        </b>
+                        <br>
+                        Participation in this study is limited to individuals age 18 and older.
+                    </p>
+                     <p>
+                        <b>
+                            Risks
+                        </b>
+                         <br>
+                         The risks and discomfort associated with participation in this study are no greater than those ordinarily encountered in daily life or during other online activities. There is a risk of breach of confidentiality, however We will decouple publicly released data from identifiable markers. The lookup table that will associate the public data with identifiable data will be encrypted and stored securely. It will be password protected and accessible only by team members.
+
+                    </p>
+                    <p>
+                        <b>
+                        Benefits
+                        </b>
+                        <br>
+                        There may be no personal benefit from your participation in the study but the knowledge received may be of value to humanity.
+                    </p>
+                
+                    <p>
+                        <b>
+                        Compensation & Costs
+                        </b>
+                        <br>
+                        You will be compensated with $4 if you complete this study.
+
+                        There will be no cost to you if you participate in this study. 
+
+                    </p>
+                
+                    <p>
+                        <b>
+                        Future Use of Information and/or Bio-Specimens 
+                        </b>
+                        In the future, once we have removed all identifiable information from your data (information or bio-specimens), we may use the data for our future research studies, or we may distribute the data to other researchers for their research studies.  We would do this without getting additional informed consent from you (or your legally authorized representative).  Sharing of data with other researchers will only be done in such a manner that you will not be identified.
+                        <br>
+                    </p>
+
+                    <p>
+                        <b>
+                        Confidentiality 
+                        </b>
+                        <br>
+                        The study will collect your research data through use of Amazon Mechanical Turk or Prolific. These companies are not owned by CMU. These companies will have access to your research data that you produce and any identifiable information that you share with them while using their product. Please note that Carnegie Mellon does not control the Terms and Conditions of the companies or how they will use or protect any information that they collect.
+                    </p>
+                
+                    <p>
+                        <b>
+                        Right to Ask Questions & Contact Information  
+                        </b>
+                        <br>
+                        If you have any questions about this study, you should feel free to ask them by contacting the Principal Investigator now at
+
+  
+                        <br>
+                        <p class="tab">
+                        Abhijat Biswas<br>
+                        The Robotics Institute,<br>
+                        Carnegie Mellon University,<br>
+                        5000 Forbes Avenue,<br>
+                        Pittsburgh,<br> 
+                        PA,<br> 
+                        15213<br>
+                        Email: abhijatb@andrew.cmu.edu<br>
+                        </p>
+                        <br>
+                        If you have questions later, desire additional information, or wish to withdraw your participation please contact the Principal Investigator by mail, or e-mail in accordance with the contact information listed above.  
+                        <br>
+                        If you have questions pertaining to your rights as a research participant; or to report concerns to this study, you should contact the Office of Research integrity and Compliance at Carnegie Mellon University.  Email: irb-review@andrew.cmu.edu . Phone: 412-268-4721
+
+                    </p>
+                    
+                    <p>
+                        <b>
+                        Voluntary Participation    
+                        </b>
+                        <br>
+                        Your participation in this research is voluntary. You may discontinue participation at any time during the research activity. By continuing, you certify that you have read and understood the information above and want to participate in this research.
+                    </p>
+                
+                
+                
+                <!-- <embed src="chefbot-online-consent.pdf" width="800px" height="1000px" /> -->
+                
+                <br>
+                    <button type="button" class="btn btn-default btn-sm" onClick="window.print();">
+                    <span class="glyphicon glyphicon-print"></span> Print a copy of this
+                    </button>
+                </div>
+                
+        
+                  
+                    <label for="age">I am 18 years old or older:</label> 
+                    <input type="checkbox" id="age" onclick="myFunction()">
+                    <br>
+                    <label for="read">I have read and understand the information above:</label> 
+                    <input type="checkbox" id="read" onclick="myFunction()">
+                    <br>
+                    <label for="want">I want to participate in this research:</label> 
+                    <input type="checkbox" id="want" onclick="myFunction()">
+                    <label for="final">I have reviewed the eligibility requirements listed in the Participant Requirements section of this consent form and certify that I am eligible to participate in this research, to the best of my knowledge and want to participate:</label> 
+                    <input type="checkbox" id="final" onclick="myFunction()">
+                    
+                    
+                    <p id="eligible" style="display">Unless you meet all the requirements, you are not eligible to participate in this study. </p>
+
+                    <script>
+                        function myFunction() {
+                            var ageBox = document.getElementById("age");
+                            var readBox = document.getElementById("read");
+                            var wantBox =document.getElementById("want");
+                            var finalBox =document.getElementById("final");
+                            var text = document.getElementById("eligible");
+                            var header = document.getElementById("header");
+                            var yesButton = document.getElementById("yesButton");
+                        
+                            if (ageBox.checked && readBox.checked && wantBox.checked && finalBox.checked){
+                                header.style.display = "block";
+                                yesButton.style.display = "block";
+                                text.style.display = "none";
+
+                            } else {
+                                text.style.display = "block";
+                                header.style.display = "none";
+                                yesButton.style.display = "none";
+                            
+                            }
+                        }
+                    </script>
+
+                <hr />
+                <h4 id = "header" style="display:none">You are eligible to participate in our study. Do you understand and consent to these terms?</h4>
+                <br />
+
+                <center>
+                    <button id = "yesButton" style="display:none" type="button" class="btn btn-primary btn-lg" onClick="window.location='exp?hitId={{ hitid }}&assignmentId={{ assignmentid }}&workerId={{ workerid }}'">
+                    <span class="glyphicon glyphicon-ok"></span> I agree 
+                    </button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </center>
+                
+                <center>
+                    <button id = "noButton" type="button" class="btn btn-danger btn-lg" onClick="onexit()">
+                    <span class="glyphicon glyphicon-ban-circle"></span> No thanks, I do not want to do this HIT
+                    </button>
+                </center>
+
+            </div>
+        </div>
+    </body>
+</html>

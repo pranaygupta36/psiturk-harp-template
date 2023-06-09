@@ -5,20 +5,35 @@
 	<hr />
 
 	<div class="instructions well">
-
 	    <p>
-		    This is the first page of instructions.
-	    </p>
-	    
-	    <p>
-	    	Be helpful, clear.
+		    <font size = '+2'>1. For each trial, you would see a video of a driving scenario like the one below. </font>
         </p>
-
+        <div id="video-container">
+            <video id="demo-vid" width="640" height="480" controls = "controls">
+                <source id="source_comp_demo" src="../../static/demo_videos/1.webm" type="video/webm">
+            </video>
+		</div>
+        <br>
+        <br>
+        <br>
         <p>
-        	Use images and concrete examples.
+        	<font size = '+2'>2. Imagine you were to take control of the vehicle marked "*" at this point. Your task is to decide which vehicles and pedestrians in the scene you would need to watch out for to drive safely.</font>
         </p>
+        <div id="image-container">
+            <img id="demo-img" width="640" height="380" src="../../static/demo_videos/example_important_vehicle_image.png">
+            </img>
+		</div>
+        <br>
+        <br>
+        <br>
+        <p>
+        	<font size = '+2'>3. In this example you might choose to watch out for the orange car.</font>
+        </p>
+        
+
 
 	    <script type="text/javascript">
+            //add script to create image annotations
 	    //console.log(psiTurk.getInstructionIndicator())
 	    </script>
 

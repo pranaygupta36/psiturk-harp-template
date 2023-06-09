@@ -1,0 +1,133 @@
+,uniqueid,phase,annotations,image_name,pid,dl,exp,habit,vehicle_ids
+0,debug0x6ex:debugUucEn,INSTRUCTIONS,[],,,,,,
+1,debug0x6ex:debugUucEn,INSTRUCTIONS,[],,,,,,
+2,debug0x6ex:debugUucEn,INSTRUCTIONS,[],,,,,,
+3,debug0x6ex:debugUucEn,INSTRUCTIONS,[],,,,,,
+4,debug0x6ex:debugUucEn,INSTRUCTIONS,[],,,,,,
+5,debug0x6ex:debugUucEn,drivingquestionnaire,[],,,,,,
+6,debug0x6ex:debugUucEn,drivingquestionnaire,[],,631c8e97db06f601f81bd82f,True,More than 5 Year,More than 10 hours,
+7,debug0x6ex:debugUucEn,TRIAL,"[[525.5, 131.703125, 85.0, 102.0]]",trial_1.png,,,,,
+8,debug0x6ex:debugUucEn,TRIAL,"[[620.0, 253.9375, 42.0, 71.0]]",trial_2.png,,,,,
+9,debug0x6ex:debugUucEn,TRIAL,"[[663.5, 278.625, 35.0, 69.0]]",image_0_31_18167.png,,,,, 864 
+10,debug0x6ex:debugUucEn,TRIAL,"[[618.5, 99.625, 47.0, 91.0], [583.5, 201.625, 32.0, 55.0]]",image_1_2_7994.png,,,,, 409 414 
+11,debug0x6ex:debugUucEn,TRIAL,"[[624.5, 255.625, 37.0, 68.0]]",image_3_14_3461.png,,,,, 244 
+12,debug0x6ex:debugUucEn,TRIAL,"[[660.5, 327.625, 35.0, 67.0], [621.5, 109.625, 39.0, 88.0]]",image_2_31_18815.png,,,,, 882 864 
+13,debug0x6ex:debugUucEn,TRIAL,"[[619.0, 220.625, 45.0, 80.0]]",image_5_19_29899.png,,,,, 827 
+14,debug0x6ex:debugUucEn,TRIAL,"[[620.5, 232.625, 43.0, 66.0]]",image_2_31_7149.png,,,,, 403 
+15,debug0x6ex:debugUucEn,TRIAL,"[[623.5, 214.625, 34.0, 88.0]]",image_2_9_5440.png,,,,, 306 
+16,debug0x6ex:debugUucEn,TRIAL,"[[555.5, 196.625, 62.0, 67.0], [588.5, 162.625, 50.0, 28.0]]",image_1_24_22956.png,,,,, 1122 214 
+17,debug0x6ex:debugUucEn,TRIAL,"[[620.0, 249.625, 44.0, 77.0]]",image_1_19_19083.png,,,,, 618 
+18,debug0x6ex:debugUucEn,TRIAL,[],image_0_24_11000.png,,,,, 
+19,debug0x6ex:debugUucEn,TRIAL,[],image_3_24_10256.png,,,,, 
+20,debug0x6ex:debugUucEn,TRIAL,[],image_3_31_19900.png,,,,, 
+21,debug0x6ex:debugUucEn,TRIAL,[],image_3_9_2363.png,,,,, 
+22,debug0x6ex:debugUucEn,postquestionnaire,[],,,,,,
+23,debug0x6ex:debugUucEn,postquestionnaire,[],,,,,,
+24,debugtGudV:debugYP1XZ,INSTRUCTIONS,[],,,,,,
+25,debugtGudV:debugYP1XZ,INSTRUCTIONS,[],,,,,,
+26,debugtGudV:debugYP1XZ,INSTRUCTIONS,[],,,,,,
+27,debugtGudV:debugYP1XZ,INSTRUCTIONS,[],,,,,,
+28,debugtGudV:debugYP1XZ,INSTRUCTIONS,[],,,,,,
+29,debugtGudV:debugYP1XZ,drivingquestionnaire,[],,,,,,
+30,debugtGudV:debugYP1XZ,drivingquestionnaire,[],,63d176dbaef5e7827cd86954,True,More than 15 Years,More than 1 hour,
+31,debugtGudV:debugYP1XZ,TRIAL,"[[523.2000122070312, 139.3874969482422, 84.0, 84.0], [380.1999816894531, 31.387481689453125, 50.0, 48.0]]",trial_1.png,,,,,
+32,debugtGudV:debugYP1XZ,TRIAL,"[[517.2000122070312, 13.42498779296875, 61.0, 54.0], [371.1999816894531, 1.42498779296875, 56.0, 46.0], [619.2000122070312, 261.42498779296875, 42.0, 60.0]]",trial_2.png,,,,,
+33,debugtGudV:debugYP1XZ,TRIAL,"[[693.2000122070312, 128.42498779296875, 64.0, 47.0]]",image_3_19_24354.png,,,,, 742 
+34,debugtGudV:debugYP1XZ,TRIAL,"[[404.3999938964844, 242.8249969482422, 60.0, 39.99998474121094], [361.3999938964844, 157.8249969482422, 46.0, 48.0], [809.3999633789062, 209.8249969482422, 52.0, 41.0]]",image_0_19_8883.png,,,,, 463 209 453 
+35,debugtGudV:debugYP1XZ,TRIAL,"[[583.2000122070312, 290.42498779296875, 32.0, 42.0]]",image_1_19_4143.png,,,,, 431 
+36,debugtGudV:debugYP1XZ,TRIAL,"[[659.3999633789062, 372.625, 37.0, 72.0], [584.3999633789062, 263.625, 35.0, 73.0], [587.3999633789062, 406.625, 29.0, 64.0], [661.3999633789062, 238.625, 30.0, 60.0]]",image_4_31_2572.png,,,,, 267 260 265 262 
+37,debugtGudV:debugYP1XZ,TRIAL,"[[613.2000122070312, 472.42498779296875, 44.0, 77.0], [660.2000122070312, 390.42498779296875, 33.0, 70.0], [623.2000122070312, 260.42498779296875, 30.0, 57.0]]",image_6_31_12203.png,,,,, 526 527 510 
+38,debugtGudV:debugYP1XZ,TRIAL,"[[570.2000122070312, 115.42499542236328, 43.0, 96.99999237060547], [613.2000122070312, 283.42498779296875, 48.0, 50.0]]",image_1_9_9541.png,,,,, 377 210 
+39,debugtGudV:debugYP1XZ,TRIAL,"[[561.2000122070312, 238.625, 52.0, 80.0], [649.2000122070312, 219.625, 44.0, 50.0]]",image_0_24_31082.png,,,,, 1493 211 
+40,debugtGudV:debugYP1XZ,TRIAL,"[[563.2000122070312, 95.82499694824219, 57.0, 68.0], [620.2000122070312, 205.8249969482422, 35.0, 62.99998474121094]]",image_3_14_1031.png,,,,, 222 207 
+41,debugtGudV:debugYP1XZ,TRIAL,"[[617.2000122070312, 251.625, 44.0, 72.0], [620.2000122070312, 450.625, 34.0, 66.0]]",image_3_24_22543.png,,,,, 1122 1212 
+42,debugtGudV:debugYP1XZ,TRIAL,"[[662.2000122070312, 155.4250030517578, 49.0, 78.0], [745.2000122070312, 227.4250030517578, 41.0, 51.99998474121094]]",image_0_9_9472.png,,,,, 376 210 
+43,debugtGudV:debugYP1XZ,TRIAL,"[[622.2000122070312, 258.8249816894531, 35.0, 55.0], [625.2000122070312, 514.8250122070312, 30.0, 55.0]]",image_2_14_3348.png,,,,, 244 257 
+44,debugtGudV:debugYP1XZ,TRIAL,"[[633.2000122070312, 477.42498779296875, 32.0, 67.0], [933.2000122070312, 235.42498779296875, 57.0, 31.0], [574.2000122070312, 247.42498779296875, 35.0, 49.0]]",image_0_31_10950.png,,,,, 475 407 477 
+45,debugtGudV:debugYP1XZ,TRIAL,"[[617.2000122070312, 458.2250061035156, 43.0, 61.999969482421875], [617.2000122070312, 256.2250061035156, 42.0, 62.0], [576.2000122070312, 51.224998474121094, 37.0, 64.0]]",image_1_2_5565.png,,,,, 385 372 383 
+46,debugtGudV:debugYP1XZ,TRIAL,"[[538.2000122070312, 553.4249877929688, 60.0, 63.0], [614.2000122070312, 185.4250030517578, 38.0, 70.99998474121094]]",image_1_31_16429.png,,,,, 781 763 
+47,debugtGudV:debugYP1XZ,TRIAL,"[[618.2000122070312, 464.625, 43.0, 62.0], [617.2000122070312, 267.625, 42.0, 59.0]]",image_3_14_3461.png,,,,, 257 244 
+48,debugtGudV:debugYP1XZ,TRIAL,"[[629.2000122070312, 238.02499389648438, 55.0, 43.0]]",trial_3.png,,,,,
+49,debugtGudV:debugYP1XZ,postquestionnaire,[],,,,,,
+50,debugtGudV:debugYP1XZ,postquestionnaire,[],,,,,,
+51,debugzQGCM:debugYEHww,INSTRUCTIONS,[],,,,,,
+52,debugzQGCM:debugYEHww,INSTRUCTIONS,[],,,,,,
+53,debugzQGCM:debugYEHww,INSTRUCTIONS,[],,,,,,
+54,debugzQGCM:debugYEHww,INSTRUCTIONS,[],,,,,,
+55,debugzQGCM:debugYEHww,INSTRUCTIONS,[],,,,,,
+56,debugzQGCM:debugYEHww,drivingquestionnaire,[],,,,,,
+57,debugzQGCM:debugYEHww,drivingquestionnaire,[],,6100ad3174a06d6fb34718ce,True,More than 15 Years,More than 15 hours,
+58,debugzQGCM:debugYEHww,TRIAL,"[[518.0, 150.0, 92.0, 79.0]]",trial_1.png,,,,,
+59,debugzQGCM:debugYEHww,TRIAL,[],trial_2.png,,,,,
+60,debugzQGCM:debugYEHww,TRIAL,"[[575.0, 306.0, 47.0, 63.0], [475.0, 529.0, 30.0, 50.0], [662.0, 193.0, 1.0, 2.0]]",image_2_24_8418.png,,,,, 739 747 
+61,debugzQGCM:debugYEHww,TRIAL,"[[583.0, 389.0, 41.0, 85.0], [581.0, 261.0, 46.0, 75.0]]",image_0_19_20986.png,,,,, 665 667 
+62,debugzQGCM:debugYEHww,TRIAL,"[[617.0, 481.0, 42.0, 86.0], [583.0, 277.0, 37.0, 72.0]]",image_0_24_4221.png,,,,, 491 510 
+63,debugzQGCM:debugYEHww,TRIAL,[],image_3_24_22543.png,,,,, 
+64,debugzQGCM:debugYEHww,TRIAL,"[[586.0, 500.0, 61.0, 71.0], [615.0, 172.0, 47.0, 73.0]]",image_3_19_16450.png,,,,, 594 549 
+65,debugzQGCM:debugYEHww,TRIAL,"[[743.0, 236.0, 83.0, 48.0], [647.0, 489.0, 43.0, 74.0], [639.0, 479.0, 8.0, 12.0]]",image_1_2_9411.png,,,,, 433 419 
+66,debugzQGCM:debugYEHww,TRIAL,[],image_2_24_13422.png,,,,, 
+67,debug2WNzi:debugk5xLk,INSTRUCTIONS,[],,,,,,
+68,debug2WNzi:debugk5xLk,INSTRUCTIONS,[],,,,,,
+69,debug2WNzi:debugk5xLk,INSTRUCTIONS,[],,,,,,
+70,debug2WNzi:debugk5xLk,INSTRUCTIONS,[],,,,,,
+71,debug2WNzi:debugk5xLk,INSTRUCTIONS,[],,,,,,
+72,debug2WNzi:debugk5xLk,drivingquestionnaire,[],,,,,,
+73,debug2WNzi:debugk5xLk,drivingquestionnaire,[],,5ed70903f3b2f8195f919e6f,True,More than 15 Years,More than 15 hours,
+74,debug2WNzi:debugk5xLk,TRIAL,[],trial_1.png,,,,,
+75,debug2WNzi:debugk5xLk,TRIAL,"[[689.0, 92.0, 57.0, 70.0], [590.0, 266.0, 24.0, 67.0], [622.0, 488.0, 38.0, 70.0]]",image_0_24_2877.png,,,,, 446 450 451 
+76,debug2WNzi:debugk5xLk,TRIAL,"[[785.0, 93.0, 68.0, 37.0], [367.0, 46.0, 53.0, 38.0], [387.0, 129.0, 70.0, 44.0]]",image_3_24_30896.png,,,,, 1494 1493 
+77,debug2WNzi:debugk5xLk,TRIAL,"[[540.0, 199.0, 44.0, 82.0], [251.0, 218.0, 77.0, 44.0], [502.0, 246.0, 46.0, 71.0], [353.0, 204.0, 67.0, 34.0], [588.0, 328.0, 30.0, 75.0], [380.0, 246.0, 62.0, 31.0], [278.0, 265.0, 84.0, 30.0]]",image_3_31_9443.png,,,,, 409 471 410 440 468 470 
+78,debug2WNzi:debugk5xLk,TRIAL,"[[623.0, 295.0, 42.0, 35.0], [571.0, 113.0, 47.0, 112.0]]",image_1_9_9541.png,,,,, 210 377 
+79,debug2WNzi:debugk5xLk,TRIAL,"[[625.0, 246.0, 37.0, 73.0]]",image_2_19_10778.png,,,,, 469 
+80,debug2WNzi:debugk5xLk,TRIAL,"[[661.0, 406.0, 29.0, 91.0], [584.0, 180.0, 52.0, 58.0]]",image_2_31_5937.png,,,,, 405 382 
+81,debug2WNzi:debugk5xLk,TRIAL,"[[373.0, 108.0, 52.0, 35.0]]",image_2_9_7205.png,,,,, 352 
+82,debug2WNzi:debugk5xLk,TRIAL,"[[224.0, 170.0, 69.0, 56.0], [629.0, 150.0, 46.0, 62.0], [273.0, 247.0, 58.0, 42.0], [241.0, 229.0, 56.0, 43.0], [319.0, 267.0, 44.0, 47.0], [178.0, 166.0, 61.0, 51.0]]",image_2_31_204.png,,,,, 225 198 224 226 226 227 224 228 
+83,debug2WNzi:debugk5xLk,TRIAL,"[[581.0, 379.0, 44.0, 89.0], [619.0, 258.0, 39.0, 55.0]]",image_1_31_827.png,,,,, 240 198 
+84,debug2WNzi:debugk5xLk,TRIAL,"[[621.0, 256.0, 39.0, 68.0], [588.0, 322.0, 34.0, 63.0]]",image_3_19_19917.png,,,,, 618 649 
+85,debug2WNzi:debugk5xLk,TRIAL,"[[595.0, 500.0, 32.0, 69.0]]",image_0_31_17902.png,,,,, 837 
+86,debug2WNzi:debugk5xLk,TRIAL,"[[571.0, 128.0, 39.0, 55.0], [641.0, 303.0, 39.0, 47.0], [525.0, 273.0, 52.0, 118.0]]",image_1_9_5656.png,,,,, 323 213 
+87,debug2WNzi:debugk5xLk,TRIAL,"[[582.0, 253.0, 39.0, 59.0], [626.0, 177.0, 25.0, 72.0]]",image_1_19_19793.png,,,,, 648 618 
+88,debugLufOo:debugIumYn,INSTRUCTIONS,[],,,,,,
+89,debugLufOo:debugIumYn,INSTRUCTIONS,[],,,,,,
+90,debugLufOo:debugIumYn,INSTRUCTIONS,[],,,,,,
+91,debugLufOo:debugIumYn,INSTRUCTIONS,[],,,,,,
+92,debugLufOo:debugIumYn,INSTRUCTIONS,[],,,,,,
+93,debugLufOo:debugIumYn,drivingquestionnaire,[],,,,,,
+94,debugLufOo:debugIumYn,drivingquestionnaire,[],,5ff67e372689e722d2001d6c,True,More than 1 Year,More than 10 hours,
+95,debugLufOo:debugIumYn,TRIAL,"[[529.0, 143.0, 78.0, 70.0], [368.0, 35.0, 70.0, 38.0]]",trial_1.png,,,,,
+96,debugLufOo:debugIumYn,TRIAL,"[[369.0, -1.0, 71.0, 48.0], [622.0, 267.0, 37.0, 53.0]]",trial_2.png,,,,,
+97,debugLufOo:debugIumYn,TRIAL,"[[635.0, 294.0, 46.0, 37.0], [625.0, 168.0, 28.0, 61.0]]",image_2_19_12207.png,,,,, 211 508 
+98,debugLufOo:debugIumYn,TRIAL,"[[635.0, 213.0, 39.0, 67.0]]",image_1_24_4867.png,,,,, 446 
+99,debugLufOo:debugIumYn,TRIAL,"[[469.0, 260.0, 71.0, 43.0], [417.0, 167.0, 55.0, 52.0], [530.0, 225.0, 55.0, 52.0]]",image_4_19_15754.png,,,,, 580 216 549 
+100,debugLufOo:debugIumYn,TRIAL,"[[624.0, 260.0, 38.0, 62.0]]",image_1_19_19083.png,,,,, 618 
+101,debugLufOo:debugIumYn,TRIAL,[],image_0_14_2.png,,,,, 
+102,debugLufOo:debugIumYn,TRIAL,"[[456.0, 59.0, 77.0, 37.0], [361.0, 100.0, 66.0, 42.0], [812.0, 151.0, 45.0, 34.0], [799.0, 63.0, 73.0, 39.0]]",image_0_9_9016.png,,,,, 372 371 210 376 
+103,debugLufOo:debugIumYn,TRIAL,"[[839.0, 116.0, 44.0, 44.0], [896.0, 116.0, 43.0, 41.0], [823.0, 36.0, 74.0, 40.0]]",image_2_2_290.png,,,,, 260 293 
+104,debugDQR1k:debug63UNc,INSTRUCTIONS,[],,,,,,
+105,debugDQR1k:debug63UNc,INSTRUCTIONS,[],,,,,,
+106,debugDQR1k:debug63UNc,INSTRUCTIONS,[],,,,,,
+107,debugDQR1k:debug63UNc,INSTRUCTIONS,[],,,,,,
+108,debugDQR1k:debug63UNc,INSTRUCTIONS,[],,,,,,
+109,debugDQR1k:debug63UNc,drivingquestionnaire,[],,,,,,
+110,debugDQR1k:debug63UNc,drivingquestionnaire,[],,636e4ac050e0adc5c5c651df,True,More than 15 Years,More than 15 hours,
+111,debugDQR1k:debug63UNc,TRIAL,"[[533.5, 136.03125, 74.0, 90.0], [379.5, 35.03125, 54.0, 52.0]]",trial_1.png,,,,,
+112,debugDQR1k:debug63UNc,TRIAL,"[[621.5, 260.03125, 38.0, 66.0]]",trial_2.png,,,,,
+113,debugDQR1k:debug63UNc,TRIAL,[],image_0_14_5537.png,,,,, 
+114,debugDQR1k:debug63UNc,TRIAL,"[[618.5, 268.71875, 44.0, 58.0]]",image_2_9_8152.png,,,,, 356 
+115,debugDQR1k:debug63UNc,TRIAL,"[[658.5, 285.21875, 40.0, 62.0], [630.5, 235.21875, 26.0, 59.0]]",image_1_31_3540.png,,,,, 260 264 
+116,debugDQR1k:debug63UNc,TRIAL,"[[603.5, 237.21875, 52.0, 78.0]]",image_2_24_15974.png,,,,, 1074 
+117,debugDQR1k:debug63UNc,TRIAL,[],image_3_19_11022.png,,,,, 
+118,debugClqvH:debugnP0EU,INSTRUCTIONS,[],,,,,,
+119,debugClqvH:debugnP0EU,INSTRUCTIONS,[],,,,,,
+120,debugClqvH:debugnP0EU,INSTRUCTIONS,[],,,,,,
+121,debugClqvH:debugnP0EU,INSTRUCTIONS,[],,,,,,
+122,debugClqvH:debugnP0EU,INSTRUCTIONS,[],,,,,,
+123,debugClqvH:debugnP0EU,drivingquestionnaire,[],,,,,,
+124,debugClqvH:debugnP0EU,drivingquestionnaire,[],,5cadf2fa7e99a900171c4705,True,More than 15 Years,More than 5 hours,
+125,debugpV9SP:debugZzXWd,INSTRUCTIONS,[],,,,,,
+126,debugpV9SP:debugZzXWd,INSTRUCTIONS,[],,,,,,
+127,debugpV9SP:debugZzXWd,INSTRUCTIONS,[],,,,,,
+128,debugpV9SP:debugZzXWd,INSTRUCTIONS,[],,,,,,
+129,debugpV9SP:debugZzXWd,INSTRUCTIONS,[],,,,,,
+130,debugpV9SP:debugZzXWd,drivingquestionnaire,[],,,,,,
+131,debugpV9SP:debugZzXWd,drivingquestionnaire,[],,5a2170527413810001521c19,True,More than 15 Years,More than 15 hours,

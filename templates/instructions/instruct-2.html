@@ -7,15 +7,93 @@
     <div class="instructions well">
 
         <p>
-            This is the second page of instructions
+            <font size = '+2'>3. Indicate which vehicles and pedestrians are important by drawing boxes around them. The clip below shows how it is done.</font>
         </p>
+        <div id="video-container">
+            <video id="demo-vid" width="640" height="480" controls = "controls">
+                <source id="source_comp_demo" src="../../static/demo_videos/bounding-boxes-instructions.webm" type="video/webm">
+            </video>
+		</div>
+        <br>
+        <br>
+        <br>
 
         <p>
-            Put some text in this paragraph
+        	<font size = '+2'>4. You can select as many vehicles or pedestrians as you like. However, draw one box for each vehicle or pedestrian you have selected, and keep the entire element within the box. Here are some examples of incorrectly drawn boxes.</font>
         </p>
 
+        <div class="row">
+            <div class="column">
+              <!-- <img src="../../static/demo_videos/correct_bb_1.png" alt="Correct Bounding Box 1" style="width:100%"> -->
+              <img src="../../static/demo_videos/correct_bb_1.png" alt="Correct Bounding Box 1" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="../../static/demo_videos/correct_bb_2.png" alt="Correct Bounding Box 2" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="../../static/demo_videos/correct_bb_5.png" alt="Correct Bounding Box 3" style="width:100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <p style="text-align:center"><font size = '+2'>The entire vehicle is within the box.</font>  </p>
+            </div>
+            <div class="column">
+                <p style="text-align:center"><font size = '+2'>You can select multiple vehicles or pedestrians </font> </p>
+            </div>
+            <div class="column">
+                <p style="text-align:center"><font size = '+2'>You can leave the image blank if you think no vehicles or pedestrians are important.</font>  </p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="column">
+              <img src="../../static/demo_videos/incorrect_bb_1.png" alt="Incorrect Bounding Box 1" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="../../static/demo_videos/incorrect_bb_2.png" alt="Incorrect Bounding Box 2" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="../../static/demo_videos/incorrect_bb_5.png" alt="Incorrect Bounding Box 3" style="width:100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <p style="text-align:center"><font size = '+2'>Incorrect because it contains more than 1 vehicles.</font>  </p>
+            </div>
+            <div class="column">
+                <p style="text-align:center"><font size = '+2'>Incorrect because it does not contain the entire vehicle. </font> </p>
+            </div>
+            <div class="column">
+                <p style="text-align:center"><font size = '+2'>Incorrect because it does not contain any vehicle.</font>  </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        
+        
+        <p>
+        	<font size = '+2'>5. You can practice drawing, editing and deleting boxes on this image.</font>
+        </p>    
+        <div id="image-container">
+            <img id="demo-img" width="1200" height="720" src="../../static/demo_videos/example_important_vehicle_image.png">
+		</div>
 
         <script type="text/javascript">
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
+            var anno = Annotorious.init({
+			image: document.getElementById('demo-img'),
+			disableEditor: true,
+			widgets : [],
+			allowEmpty : true
+    		});
+	    	anno.setVisible(true);
+
         //console.log(psiTurk.getInstructionIndicator())
         </script>
 
